@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.game {
+    width: 90%;
+    height: 800px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid red;
+    background-image: url("https://i.pinimg.com/originals/11/99/b2/1199b274bffded91d655dd12435f5fb0.jpg");
+    position: relative;
+    background-size: cover;
+}
+
+.score__card {
+    position: absolute;
+    font-size: 2rem;
+    right: 0;
+}
+
+.pipe {
+    width: 50px;
+    height: 800px;
+    background-color: rgb(27, 110, 6);
+    position: relative;
+    left: 100%;
+    animation: pipe 3s infinite;
+    background-image: url("https://wallpaperaccess.com/full/879624.png");
+}
+
+.hole {
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    background-color: #56a9da;
+}
+
+.character {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+}
+
+.character img {
+    width: 100%;
+}
+
+@keyframes pipe {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -50px;
+    }
+}
